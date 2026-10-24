@@ -2,6 +2,21 @@
 
 ---
 
+## Quick Start in Your Browser (No Install)
+
+Don't want to install anything? You can run the whole workshop in Google Colab, which only needs a browser and a Google account.
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vinays75-coder/gen-ai-llm-basics-workshop/blob/main/genai_llm_workshop_final.ipynb)
+
+- Click the button above and sign in with your Google account if asked.
+- Click **Runtime → Run all**, or click a code cell and press **Shift + Enter** to run cells one at a time.
+- If Colab warns that the notebook was not authored by Google, click **Run anyway**. The notebook only uses Python's built-in libraries.
+- Your changes are not saved automatically. To keep them, choose **File → Save a copy in Drive**.
+
+Prefer to run it on your own computer? Follow the steps below.
+
+---
+
 ## Prerequisites
 
 **You need Python 3.8 or later installed.**
@@ -150,5 +165,5 @@ If you prefer VS Code over JupyterLab:
 
 ---
 
-**No internet connection is required to run this notebook.**
+**No internet connection is required to run this notebook on your own computer.**
 All code uses only Python's built-in standard libraries — nothing extra to install beyond JupyterLab itself. Enjoy the workshop!
