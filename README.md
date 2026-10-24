@@ -19,16 +19,24 @@
 
 ---
 
-## Step 1 — Unzip the File
+## Step 1 — Download and Unzip the Files
 
-- **Mac:** Double-click `genai_llm_workshop_share.zip` in Finder. A folder or set of files will appear in the same location.
-- **Windows:** Right-click `genai_llm_workshop_share.zip` → **Extract All…** → choose a destination folder → click **Extract**.
+Go to https://github.com/vinays75-coder/gen-ai-llm-basics-workshop, click the green **Code** button and choose **Download ZIP**. This gives you a file called `gen-ai-llm-basics-workshop-main.zip`.
+
+- **Mac:** Double-click `gen-ai-llm-basics-workshop-main.zip` in Finder. A folder with the same name will appear in the same location. (If you downloaded it with Safari, it may already be unzipped for you.)
+- **Windows:** Right-click `gen-ai-llm-basics-workshop-main.zip` → **Extract All…** → choose a destination folder → click **Extract**.
 - **Linux:**
   ```
-  unzip genai_llm_workshop_share.zip -d genai_llm_workshop
+  unzip gen-ai-llm-basics-workshop-main.zip
   ```
 
-> **Important:** Keep all the files together in the same folder. The images must be in the same directory as the `.ipynb` file for them to display correctly.
+If you already use Git, you can clone the repo instead of downloading the ZIP:
+
+```
+git clone https://github.com/vinays75-coder/gen-ai-llm-basics-workshop.git
+```
+
+> **Good to know:** All the pictures are saved inside the notebook file, so `genai_llm_workshop_final.ipynb` is the only file you need to open. You don't have to keep any image files next to it.
 
 ---
 
@@ -56,14 +64,16 @@ In your terminal / Command Prompt, change directory to where you unzipped the fi
 
 - **Mac/Linux example:**
   ```
-  cd ~/Downloads
+  cd ~/Downloads/gen-ai-llm-basics-workshop-main
   ```
 - **Windows example:**
   ```
-  cd C:\Users\YourName\Downloads
+  cd C:\Users\YourName\Downloads\gen-ai-llm-basics-workshop-main
   ```
 
-Replace the path with wherever you actually unzipped the files.
+Replace the path with wherever you actually unzipped the files. If you cloned the repo, the folder is called `gen-ai-llm-basics-workshop`.
+
+> **Windows tip:** **Extract All** sometimes puts the files one level deeper, inside a second folder with the same name. If you can't see `genai_llm_workshop_final.ipynb`, go into that inner folder.
 
 ---
 
@@ -119,8 +129,9 @@ You have two options:
 
 | Problem | Fix |
 |---|---|
+| Typing `python` opens the Microsoft Store (Windows) | Python isn't installed yet, or it wasn't added to PATH. Install it from python.org, tick **Add Python to PATH**, then open a new Command Prompt |
 | `jupyter` command not found | Make sure Python was added to PATH; try `python -m jupyter lab` instead |
-| Images not showing | Confirm all `.png` files are in the **same folder** as the `.ipynb` file |
+| Images not showing | Make sure you opened the `.ipynb` file in JupyterLab or VS Code. If pictures are still missing, the download may not have finished, so download the ZIP again |
 | `pip` not found on Mac | Use `pip3` instead of `pip` |
 | Port 8888 already in use | Run `jupyter lab --port 8889` |
 | Browser doesn't open | Copy the `http://localhost:8888/...` URL from the terminal into your browser manually |

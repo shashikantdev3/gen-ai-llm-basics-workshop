@@ -200,15 +200,18 @@
   <hr />
 
   <!-- Step 1 -->
-  <h2><span class="step-badge">Step 1</span> Unzip the File</h2>
+  <h2><span class="step-badge">Step 1</span> Download and Unzip the Files</h2>
+  <p>Go to <a href="https://github.com/vinays75-coder/gen-ai-llm-basics-workshop" target="_blank">https://github.com/vinays75-coder/gen-ai-llm-basics-workshop</a>, click the green <strong>Code</strong> button and choose <strong>Download ZIP</strong>. This gives you a file called <code>gen-ai-llm-basics-workshop-main.zip</code>.</p>
   <p class="os-label">Mac</p>
-  <p>Double-click <code>genai_llm_workshop_share.zip</code> in Finder. Files will appear in the same location.</p>
+  <p>Double-click <code>gen-ai-llm-basics-workshop-main.zip</code> in Finder. A folder with the same name will appear in the same location. (If you downloaded it with Safari, it may already be unzipped for you.)</p>
   <p class="os-label">Windows</p>
-  <p>Right-click <code>genai_llm_workshop_share.zip</code> → <strong>Extract All…</strong> → choose a destination folder → click <strong>Extract</strong>.</p>
+  <p>Right-click <code>gen-ai-llm-basics-workshop-main.zip</code> → <strong>Extract All…</strong> → choose a destination folder → click <strong>Extract</strong>.</p>
   <p class="os-label">Linux</p>
-  <pre><code>unzip genai_llm_workshop_share.zip -d genai_llm_workshop</code></pre>
-  <blockquote class="warning">
-    <strong>Important:</strong> Keep all the files together in the same folder. The images must be in the same directory as the <code>.ipynb</code> file for them to display correctly.
+  <pre><code>unzip gen-ai-llm-basics-workshop-main.zip</code></pre>
+  <p>If you already use Git, you can clone the repo instead of downloading the ZIP:</p>
+  <pre><code>git clone https://github.com/vinays75-coder/gen-ai-llm-basics-workshop.git</code></pre>
+  <blockquote class="tip">
+    <strong>Good to know:</strong> All the pictures are saved inside the notebook file, so <code>genai_llm_workshop_final.ipynb</code> is the only file you need to open. You don't have to keep any image files next to it.
   </blockquote>
 
   <hr />
@@ -227,10 +230,13 @@
   <h2><span class="step-badge">Step 3</span> Navigate to the Workshop Folder</h2>
   <p>In your terminal / Command Prompt, change directory to where you unzipped the files.</p>
   <p class="os-label">Mac / Linux example</p>
-  <pre><code>cd ~/Downloads</code></pre>
+  <pre><code>cd ~/Downloads/gen-ai-llm-basics-workshop-main</code></pre>
   <p class="os-label">Windows example</p>
-  <pre><code>cd C:\Users\YourName\Downloads</code></pre>
-  <p>Replace the path with wherever you actually unzipped the files.</p>
+  <pre><code>cd C:\Users\YourName\Downloads\gen-ai-llm-basics-workshop-main</code></pre>
+  <p>Replace the path with wherever you actually unzipped the files. If you cloned the repo, the folder is called <code>gen-ai-llm-basics-workshop</code>.</p>
+  <blockquote>
+    <strong>Windows tip:</strong> <strong>Extract All</strong> sometimes puts the files one level deeper, inside a second folder with the same name. If you can't see <code>genai_llm_workshop_final.ipynb</code>, go into that inner folder.
+  </blockquote>
 
   <hr />
 
@@ -287,12 +293,16 @@
       <th>Fix</th>
     </tr>
     <tr>
+      <td>Typing <code>python</code> opens the Microsoft Store (Windows)</td>
+      <td>Python isn't installed yet, or it wasn't added to PATH. Install it from python.org, tick <strong>Add Python to PATH</strong>, then open a new Command Prompt</td>
+    </tr>
+    <tr>
       <td><code>jupyter</code> command not found</td>
       <td>Make sure Python was added to PATH; try <code>python -m jupyter lab</code> instead</td>
     </tr>
     <tr>
       <td>Images not showing</td>
-      <td>Confirm all <code>.png</code> files are in the <strong>same folder</strong> as the <code>.ipynb</code> file</td>
+      <td>Make sure you opened the <code>.ipynb</code> file in JupyterLab or VS Code. If pictures are still missing, the download may not have finished, so download the ZIP again</td>
     </tr>
     <tr>
       <td><code>pip</code> not found on Mac</td>
